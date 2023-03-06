@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
 import MovieList from './components/MovieList';
 import MovieHeading from './components/MovieHeading';
 import SearchBox from './components/SearchBox';
@@ -73,7 +72,7 @@ const App = () => {
         <MovieHeading heading='Favourites' />
       </div>
 
-      <div className='row'>
+      <div className='row card-container'>
         <MovieList
           movies={favourites}
           handleFavouritesClick={removeFavouriteMovie}
