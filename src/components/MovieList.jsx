@@ -2,7 +2,7 @@ const MovieList = (props) => {
   const FavouriteComponents = props.favouriteComponents;
   return (
     <>
-      {props.movies.map((movie, index) => (
+      {props.movies?.map((movie, index) => (
         <div
           key={index}
           className='image-container d-flex justify-content-start m-3'

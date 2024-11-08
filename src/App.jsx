@@ -59,8 +59,12 @@ const App = () => {
         <MovieHeading heading='Movies' />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
+      <div className=' mt-4 mb-4'>
+        <h1 className='text-center  mb-4'>Find your favorite movies</h1>
+        <div className='movie-placeholder'></div>
+      </div>
 
-      <div className='row '>
+      <div className='row'>
         <MovieList
           movies={movies}
           handleFavouritesClick={addFavouriteMovie}
@@ -69,7 +73,7 @@ const App = () => {
       </div>
 
       <div className='row d-flex align-items-center mt-4 mb-4'>
-        <MovieHeading heading='Favourites' />
+        <MovieHeading heading='Favorites' />
       </div>
 
       <div className='row card-container'>
